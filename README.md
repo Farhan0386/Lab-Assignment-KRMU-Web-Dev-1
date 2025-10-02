@@ -4,7 +4,7 @@ This repository contains my Web Development Lab Assignments (Unit-1) created as 
 
 📌 About Me
 
-Hi, I’m Farhan Hussain, a B.Tech CSE student specializing in Artificial Intelligence & Machine Learning.
+Hi, I am Farhan Hussain, a B.Tech CSE student specializing in Artificial Intelligence & Machine Learning.
 I’m passionate about:
 
 💻 Web Development
