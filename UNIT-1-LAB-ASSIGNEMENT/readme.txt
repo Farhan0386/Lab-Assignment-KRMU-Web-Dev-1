@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Lab Assignment – KRMU Web Development 1
 
 This repository contains my Web Development Lab Assignments (Unit-1) created as part of my coursework at K.R. Mangalam University. The assignments focus on HTML basics, portfolio design, and small web projects.
@@ -58,3 +59,6 @@ If you’d like to connect or collaborate:
 📧 Email: farhan03860@gmail.com
 
 🌐 GitHub: Farhan0386
+=======
+
+>>>>>>> e29a24f37413d09a5ef1f5f85dd798cef09c6b27
