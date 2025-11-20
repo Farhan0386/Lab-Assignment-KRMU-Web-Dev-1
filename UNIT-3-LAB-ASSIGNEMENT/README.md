@@ -18,25 +18,6 @@ GitHub: @Farhan0386
 
 LinkedIn: Farhan Hussain
 
-📂 Repository Structure
-
-The assignments are organized by unit:
-
-lab-assignment-krmu-web-dev-1/
-├── UNIT-1-LAB-ASSIGNEMENT/
-│   ├── LAB-1.html              # Initial Portfolio Draft (HTML only)
-│   ├── myphoto.png             # Profile Image
-│   └── readme.txt              # Unit 1 Readme
-├── UNIT-2-LAB-ASSIGNEMENT/
-│   ├── index.html              # Responsive Portfolio (HTML + CSS)
-│   ├── style.css               # CSS for Unit 2 Portfolio
-│   ├── myphoto.png             # Profile Image
-│   └── README.md               # Unit 2 Readme
-├── UNIT-3-LAB-ASSIGNEMENT/
-│   ├── index.html              # Final Portfolio Version (Advanced CSS, Responsive)
-│   ├── style.css               # Advanced CSS for Unit 3 Portfolio
-│   └── myphoto.png             # Profile Image
-└── README.md                   # This file (Main Repository Overview)
 
 
 ✨ Assignment Overview
