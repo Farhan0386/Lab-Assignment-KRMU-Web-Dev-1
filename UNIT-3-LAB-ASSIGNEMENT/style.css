@@ -1,4 +1,3 @@
-
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color:white;
@@ -10,18 +9,18 @@ body {
 h2{
   color: red;
 }
+
 h1{
   color: red;
-} 
+}
+
 hr{
   border: none;
   height: 3px;
   background-color: grey;
 }        
   
-
-
-/* --- HEADER SECTION --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*  HEADER SECTION */
 @keyframes changeColor { 0% { color: red; } 33% { color: green; } 66% { color: blue; } 100% { color: red} 0% { color: red; } 33% { color: green; } 66% { color: blue; } 100% { color: red; } 0% { color: red; } 33% { color: green; } 66% { color: blue; } 100% { color: red} 0% { color: red; } 33% { color: green; } 66% { color: blue; } 100% { color: red; } } 
 section a ,.footer-credit{ animation-name: changeColor; animation-duration: 0.6s  ;
   animation-iteration-count: infinite; 
@@ -30,6 +29,7 @@ section a ,.footer-credit{ animation-name: changeColor; animation-duration: 0.6s
   text-align: left;
   margin-bottom: 13px;
 }
+
 .header  {
   background-color: black;
   top: 0;
@@ -40,6 +40,7 @@ section a ,.footer-credit{ animation-name: changeColor; animation-duration: 0.6s
   z-index: 1000;
   box-shadow: 0 2px 100px rgba(0, 0, 0, 3);
 }
+
 /* navigation links */
 .header-div-1{
   text-align: center;
@@ -53,48 +54,52 @@ section a ,.footer-credit{ animation-name: changeColor; animation-duration: 0.6s
   font-size: 18px;
 
 }
+
 .about-a:hover {
   background-color:wheat;
   border-radius: 4px;
 }
+
 .project-a:hover {
   background-color:wheat;
   border-radius: 4px;
 }
+
 .contact-a:hover {
   background-color:wheat;
   border-radius: 4px;
 }
-/* --- ABOUT ME SECTION --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*  ABOUT ME SECTION  */
 .about-div {
   background-color: white;
   padding: 15px;
   border-radius: 25px;
   margin-top: 100px;
-  margin-bottom:10px  
+  margin-bottom:10px;  
+  border-left: 4px solid red;
 }
 
 .about-content {
   display: flex;
   gap: 15px;
 }
+
 /* about photo styling */
 .about-photo {
    display:flex;
   justify-content: center;
   width: 200px;
   height: 220px;
-  border: 1px solid #0077ff; /* solid blue border */
-  border-radius:8px;  /* small rounded corners */
-  overflow: hidden;          /* keeps image inside border */
+  border: 1px solid #0077ff; 
+  border-radius:8px;  
+  overflow: hidden;         
 }
 
 .about-photo img {
- 
   width: 100%;
   height: 100%;
   object-fit: cover; 
-         /* fits image properly */
 }
 
 /* about text area */
@@ -103,6 +108,7 @@ section a ,.footer-credit{ animation-name: changeColor; animation-duration: 0.6s
   line-height: 1.4;
   color: #222;
 }
+
 .about-text  {
   padding-top: 10px ;
   padding-left: 10px;
@@ -111,7 +117,7 @@ section a ,.footer-credit{ animation-name: changeColor; animation-duration: 0.6s
   height: auto;
   background-color: wheat; 
   border-radius: 25px;
- 
+  border-left: 4px solid red;
 }
 
 /* heading */
@@ -121,13 +127,7 @@ section a ,.footer-credit{ animation-name: changeColor; animation-duration: 0.6s
   margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-/* --- PROJECTS SECTION ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/*  PROJECTS SECTION */
 .project-article {
    background-color: white;
   padding: 15px;
@@ -136,14 +136,13 @@ section a ,.footer-credit{ animation-name: changeColor; animation-duration: 0.6s
   margin-bottom:40px 
 }
 
-
 /* each project box */
 .project-article div {
-  background-color: wheat;     /* white box inside blue background */
+  background-color: wheat;     
   padding: 12px;
   border-radius: 25px;
   margin-bottom: 10px;
-  border-left: 4px solid red;  /* small blue stripe for style */
+  border-left: 4px solid red;  
 }
 
 /* project text */
@@ -157,7 +156,7 @@ section a ,.footer-credit{ animation-name: changeColor; animation-duration: 0.6s
   display: inline-block;
   text-decoration: none;
   color: white;
-  background-color: #aacaea;               /* same blue as theme */
+  background-color: #aacaea;              
   padding: 6px 10px;
   border-radius: 15px;
   font-size: 18px;
@@ -168,32 +167,28 @@ section a ,.footer-credit{ animation-name: changeColor; animation-duration: 0.6s
   background-color: orange;
 }
 
-/* --- SKILLS SECTION ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
-
+/*  SKILLS SECTION */
 .skills-article {
-  background-color: white;     /* section background - matching about and projects */
+  background-color: white;    
   padding: 15px;
   border-radius: 25px;
   margin-top: 50px;
   margin-bottom: 40px;
 }
 
-
-
-
 /* table styling */
 .skills-article table {
   width: 100%;
   border-collapse: collapse;
-  background-color: wheat;     /* matching the wheat background of other sections */
+  background-color: wheat;     
   border-radius: 15px;
   font-weight: 520;
 }
 
 /* table header */
 .skills-article thead th {
-  background-color: #aacaea;     /* vivid blue */
-  color: black;                /* white text */
+  background-color: #aacaea;     
+  color: black;               
   padding: 12px 10px;
   text-align: left;
   font-weight: 600;
@@ -206,23 +201,17 @@ section a ,.footer-credit{ animation-name: changeColor; animation-duration: 0.6s
   padding: 12px 10px;
   text-align: left;
   border-bottom: 2px solid red;
-  color: #0f172a;                /* darker text for readability */
+  color: #0f172a;               
 }
+
 section a:hover {
   background-color: orange;
   border-radius: 3px;
 }
 
-
-
-
-
-/* --- CONTACT SECTION ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
-
-
 /* contact section box */
 article {
-  background-color: white;     /* matching about and projects sections */
+  background-color: white;    
   padding: 15px;
   border-radius: 10px;
   margin-top: 50px;
@@ -234,7 +223,7 @@ form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  margin: 0 auto;                /* center form */
+  margin: 0 auto;                
   background-color: wheat;
   padding: 15px;
   border-radius: 25px;
@@ -261,7 +250,7 @@ form textarea {
 form input[type="submit"] {
   background-color: #aacaea;
   color: red;
-  border-left: 4px solid red;
+  border: 4px solid red;
   padding: 10px;
   border-radius: 15px;
   font-weight: 600;
@@ -273,16 +262,9 @@ form input[type="submit"]:hover {
   background-color: orange;
 }
 
-
-
-
-
-
-
-
-/* --- FOOTER SECTION ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* FOOTER SECTION */
 footer {
-  background-color: white;     /* matching about and projects sections */
+  background-color: white;
   padding: 15px;
   border-radius: 10px;
   text-align: center;
@@ -299,7 +281,7 @@ footer p {
 /* footer links */
 .footer-nav a {
   text-decoration: none;
-  color: red;               /* same blue as theme */
+  color: red;             
   font-weight: 600;
   margin: 0 6px;
 }
@@ -318,5 +300,75 @@ footer p {
   text-align: center;
   background-color: orange;
   border-radius: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .header {
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav1 { 
+        display: flex;
+        flex-direction: column; 
+        padding: 5px 0;
+    }
+
+    .nav1 a {
+        margin: 5px 0;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .about-div {
+        margin-top: 80px; 
+    }
+    
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-photo {
+        width: 150px; 
+        height: 170px;
+        margin: 0 auto; 
+    }
+
+    .about-text {
+        width: auto;
+        padding: 15px; 
+    }
+
+    form {
+        max-width: 100%;
+        margin: 0 10px; 
+        padding: 15px 10px;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        font-size: 18px;
+    }
+    
+    form input[type="submit"] {
+        font-size: 20px;
+        padding: 8px;
+    }
+    body {
+        padding: 0 10px; 
+    }
+
+    section, article, footer {
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 15px; 
+    }
+    
+    .project-article div {
+        border-left: 2px solid red;
+    }
 }
 
