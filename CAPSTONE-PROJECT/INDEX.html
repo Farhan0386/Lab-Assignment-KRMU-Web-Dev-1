@@ -6,7 +6,7 @@
     <title>Foodie - Delicious Food Delivered</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             margin: 0;
             padding: 0 20px;
             background-color: #f9f9f9;
@@ -103,6 +103,11 @@
             height: 100%;
             width: 100%;
         }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
          /* BROWSE BY CATEGORY */
         #categories ul {
@@ -133,27 +138,63 @@
       
 
         /* RESTAURENTS SECTION */
-        #restaurents FT-BOX-1 {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 15px;
-            width: 120px;
-            text-align: center;
-        }
-          #restaurants {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            height: auto;
-            width: 100%;
-        }
-    
+    /* Featured Restaurants - simple beginner CSS */
+#restaurants {
+  padding: 16px;
+  width: 100%;
+}
+
+#restaurants h2 {
+  font-size: 24px;
+  margin: 0 0 12px 0;
+}
+
+/* outer row container (your div with class FR-BOX-1) */
+#restaurants > .FR-BOX-1 {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;    /* lets cards wrap on small screens */
+}
+
+/* each card (article) */
+#restaurants > .FR-BOX-1 > article.FR-BOX-1 {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 300px;       /* same as your images */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* image and text inside card */
+#restaurants img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+#restaurants h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+#restaurants p, #restaurants small {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+}
+
+/* small hover lift (optional but small) */
+#restaurants > .FR-BOX-1 > article.FR-BOX-1:hover {
+  transform: translateY(-4px);
+  transition: transform 150ms;
+}
+   
     </style>
 </head>
 <body>
@@ -188,7 +229,7 @@
         </article>
     </section>
         <!-- Search Form -->
-    <section>
+    <section class="search-bar">
         <form>
             <label for="location">Location:</label>
             <input type="text" id="location" placeholder="Enter your location">
@@ -229,6 +270,18 @@
             <li class="ct-box-1">
                 <span>🧁</span> Desserts
             </li>
+            <li class="ct-box-1">
+                <span>🥤</span>Drinks
+            </li>
+              <li class="ct-box-1">
+                <span>🍝</span>Pasta
+            </li>
+              <li class="ct-box-1">
+                <span>🌮</span>Mexican
+            </li>
+              <li class="ct-box-1">
+                <span>🥗</span>Salads
+            </li>
         </ul>
     </section>
 
@@ -237,7 +290,7 @@
     <!-- Featured Restaurants -->
     <section id="restaurants">
         <h2>Featured Restaurants</h2>
-    
+     <div  class="FR-BOX-1">
         <!-- Restaurant 1 -->
         <article class="FR-BOX-1">
             <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Pizza Palace" width="300">
@@ -264,6 +317,8 @@
             <p>Sushi, Japanese</p>
             <small>30-45 min</small>
         </article>
+        
+     </div>
 
     </section>
 
